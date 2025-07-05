@@ -1,0 +1,50 @@
+/* styles */
+/* called by your view template */
+
+/* You might want to try something fancier: */
+/* less: http://lesscss.org/ */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: helvetica, arial, sans-serif;
+}
+
+h1 {
+  font-weight: bold;
+  color: rebeccapurple;
+}
+
+p, li {
+  max-width: 600px;
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+.glitchButton {
+  float:Right;
+}
+
+.center {
+    margin: auto;
+    max-width: 800px;
+    padding: 25px;
+}
+
+header {
+  font-weight: bold;
+  text-align:center;
+  
+/*    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    color: #ff4747;*/
+    font-size: 60px;
+    /*font-family: 'Righteous', cursive;
+    letter-spacing: 7px;*/
+}
