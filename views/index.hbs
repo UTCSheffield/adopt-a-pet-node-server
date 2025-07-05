@@ -1,0 +1,48 @@
+<!-- It's a handlebars template! hbs(handlebars): http://handlebarsjs.com/ -->
+
+<!DOCTYPE html>
+<html>
+  {{> head }}
+  <body class="center">
+    <header>
+ Adopt a Pet
+    </header>
+
+    <main>
+      <h1>
+        
+      </h1>
+      <section class="pet_list">
+        {{#each pets}}
+          <article>
+            <h2>
+              {{this.name}}
+            </h2>
+            <p contenteditable="true" >{{this.name}} is {{this.age}} years old</p>
+          </article>
+        {{/each}}
+      </section>
+      
+      
+      <p> The server knows a few other things, for example:</p>
+      <ul>
+        <li> The name of this Glitch project is <strong>{{projectName}}</strong>.  That'll change if you remix it, but this code will still know the truth.
+        <li>Here on the server, we timestamped this page render at <strong>{{serverTime}}</strong>. </li>
+        {{#if ip}}
+          <li> Your web browser sent along your IP address, which is <strong>{{ip}}</strong></li>
+        {{/if}}
+        <li> And of course, your lucky number is <strong>{{luckyNumber}}</strong> </li>
+      </ul>
+      
+      
+      
+      
+      <p> The data object that we built on the server and used to render this template looked like this: </p>
+      
+      <pre>{{json}}</pre>
+
+      
+      <p>...And if you were to refresh this page, some of the data above would update. </p>
+    </main>
+  </body>
+</html>
